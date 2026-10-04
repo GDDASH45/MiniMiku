@@ -11,6 +11,8 @@
 #include <linux/init.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
+#include <MiniMiku/metadata.h>
+
 
 static int __init teto_init(void)
 {
@@ -23,3 +25,4 @@ module_init(teto_init);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("GDDASH45");
 MODULE_DESCRIPTION("MiniMiku Teto driver");
+EXPORT_METADATA(MODULE_NAME, "TETO_EASTER_EGG_DRIVER");
