@@ -1,5 +1,11 @@
+menu "MiniMiku"
+
 config MIKU_EGG
     tristate "Miku egg driver"
     default y
     help
-      Enable the egg 
+      Enable the egg
+
+source "drivers/MiniMiku/vendor/Kconfig"
+
+endmenu

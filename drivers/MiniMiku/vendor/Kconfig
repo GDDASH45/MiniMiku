@@ -1,0 +1,9 @@
+menu "MiniMiku Hardware vendor"
+
+config MIKU_HWVENDOR
+	string "MiniMiku hardware vendor"
+	default ""
+	help
+	  Specifies the hardware vendor name used by MiniMiku.
+
+endmenu
