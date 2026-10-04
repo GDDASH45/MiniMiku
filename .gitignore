@@ -199,5 +199,4 @@ sphinx_*/
 rootfs/
 
 # The userspace
-miku/
 busybox/

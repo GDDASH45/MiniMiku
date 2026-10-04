@@ -1,0 +1,1 @@
+obj-$(CONFIG_MIKU_EGG) += egg.o
