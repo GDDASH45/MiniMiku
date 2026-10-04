@@ -76,4 +76,10 @@ config LOGO_LINUX_CLUT224_FILE
 
 	    magick source_image -compress none -colors 224 destination.ppm
 
+config LOGO_MINIMIKU
+	bool "MiniMiku logo"
+	depends on LOGO_LINUX_CLUT224
+	help
+	  Use the MiniMiku boot logo.
+
 endif # LOGO

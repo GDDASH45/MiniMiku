@@ -18,6 +18,10 @@
 #include <asm/setup.h>
 #endif
 
+#ifdef CONFIG_LOGO_MINIMIKU
+extern const struct linux_logo minimiku_clut224;
+#endif
+
 static bool nologo;
 module_param(nologo, bool, 0);
 MODULE_PARM_DESC(nologo, "Disables startup logo");
@@ -52,15 +56,20 @@ const struct linux_logo * __ref fb_find_logo(int depth)
 	if (depth >= 1)
 		logo = &logo_linux_mono;
 #endif
-	
+
 #ifdef CONFIG_LOGO_LINUX_VGA16
 	if (depth >= 4)
 		logo = &logo_linux_vga16;
 #endif
-	
+
 #ifdef CONFIG_LOGO_LINUX_CLUT224
 	if (depth >= 8)
 		logo = &logo_linux_clut224;
+#endif
+
+#ifdef CONFIG_LOGO_MINIMIKU
+	if (depth >= 8)
+		logo = &minimiku_clut224;
 #endif
 
 	return logo;
