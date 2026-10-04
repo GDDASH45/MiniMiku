@@ -12,6 +12,13 @@ config MIKU_TETO
     help
       Smithers, Release the chimeras
 
+config MIKU_INTPANIC
+    tristate "Intentional Panic Device"
+    default y
+    help
+      Creates /dev/panic. Writing to ir panics the kernel.
+      Intended for Developers.
+
 source "drivers/MiniMiku/vendor/Kconfig"
 
 endmenu
