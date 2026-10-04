@@ -205,3 +205,4 @@ build-iso.sh
 *.iso
 iso/
 build/
+copy_config.sh
