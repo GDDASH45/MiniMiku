@@ -194,3 +194,10 @@ sphinx_*/
 
 # bc language scripts (not LLVM bitcode)
 !kernel/time/timeconst.bc
+
+# Stuff like rootfs and other things
+rootfs/
+
+# The userspace
+miku/
+busybox/
