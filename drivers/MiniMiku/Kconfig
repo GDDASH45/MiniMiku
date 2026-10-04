@@ -6,6 +6,12 @@ config MIKU_EGG
     help
       Enable the egg
 
+config MIKU_TETO
+    tristate "heehehehehe. :o"
+    default n
+    help
+      Smithers, Release the chimeras
+
 source "drivers/MiniMiku/vendor/Kconfig"
 
 endmenu

@@ -8,6 +8,7 @@
     Contributers to this file:
 
     GDDASH45 - Oct 4, 2026
+    GDDASH45 - Oct 4, 2026 (#2)
 
 */
 
@@ -16,12 +17,15 @@
 #include <linux/module.h>
 #include <linux/proc_fs.h>
 #include <linux/seq_file.h>
+#include <generated/utsrelease.h>
 
 #define MIKU_VERSION "10.04.2026"
 
 static int mikuver_show(struct seq_file *m, void *v)
 {
-    seq_printf(m, "%s\n", MIKU_VERSION);
+    seq_printf(m, "%s\n", MIKU_VERSION); // MiniMiku version
+    seq_printf(m, "Linux %s\n", UTS_RELEASE); // UTS_Release
+
     return 0;
 }
 
