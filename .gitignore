@@ -200,3 +200,8 @@ rootfs/
 
 # The userspace
 busybox/
+
+build-iso.sh
+*.iso
+iso/
+build/
